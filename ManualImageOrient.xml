@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<executable>
+  <category>Transform</category>
+  <title>SimpleOrientMB</title>
+  <description>
+   This module computes the transformation to orient a msoue brain properly
+  </description>
+  <version>0.1</version>
+  <documentation-url></documentation-url>
+  <license></license>
+  <contributor>Francois Budin</contributor>
+<acknowledgements>
+</acknowledgements>
+  <parameters>
+    <label>Input/Output</label>
+    <description>Input/output parameters</description>
+    <string>
+      <name>inputOrientation</name>
+      <label>Input Orientation</label>
+      <description>Orientation the input image actually has</description>
+      <channel>input</channel>
+      <index>0</index>
+      <default>LPS</default>
+    </string>
+    <string>
+      <name>outputOrientation</name>
+      <label>Output Orientation</label>
+      <description>Orientation the output image actually should have</description>
+      <channel>input</channel>
+      <index>1</index>
+      <default>LPS</default>
+    </string>
+    <file>
+      <name>transform</name>
+      <label>Output Transform</label>
+      <channel>output</channel>
+      <index>2</index>
+      <description>Output Transform</description>
+    </file>
+  </parameters>
+</executable>
+
